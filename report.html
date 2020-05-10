@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Front end of Heart Disease Report</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>Heart Disease Report</h2>
+  <form action="/result" method="POST">
+    <div class="form-group">
+      <label for="age">Enter you age</label>
+      <input type="number" class="form-control" id="age" placeholder="age" name="age">
+    </div>
+
+    <div class="form-group">
+      <label for="resting_blood_pressure">The persons resting blood pressure (mm Hg on admission to the hospital)</label>
+      <input type="number" class="form-control" id="resting_blood_pressure" placeholder="resting_blood_pressure" name="resting_blood_pressure">
+    </div>
+	
+    <div class="form-group">
+      <label for="cholesterol">The persons cholesterol measurement in mg/dl</label>
+      <input type="number" class="form-control" id="cholesterol" placeholder="cholesterol" name="cholesterol">
+    </div>
+
+    <div class="form-group">
+      <label for="max_heart_rate_achieved">The persons maximum heart rate achieved</label>
+      <input type="number" class="form-control" id="max_heart_rate_achieved" placeholder="max_heart_rate_achieved" name="max_heart_rate_achieved">
+    </div>
+
+    <div class="form-group">
+      <label for="st_depression">ST depression induced by exercise relative to rest  1- 4</label>
+      <input type="number" class="form-control" id="st_depression" placeholder="st_depression" name="st_depression">
+    </div>
+
+    <div class="form-group">
+      <label for="num_major_vessels">The number of major vessels working (0-3)</label>
+      <input type="number" class="form-control" id="num_major_vessels" placeholder="num_major_vessels" name="num_major_vessels">
+    </div>
+
+	
+	<div class="form-group">
+    <label for="st_slope_downsloping">the slope of the peak exercise ST segment (Value 0: upsloping, Value 1: flat, Value 2: downsloping)</label>
+    <select class="form-control" id="st_slope_downsloping" name="st_slope_downsloping">
+      <option>0</option>
+      <option>1</option>
+      <option>2</option>
+    </select>
+    </div>
+
+    <div class="form-group">
+    <label for="sex_male">The persons sex (1 = male, 0 = female)</label>
+    <select class="form-control" id="sex_male" placeholder="Gender" name="sex_male">
+	  <option>0</option>
+      <option>1</option>
+	</select>
+    </div>	
+	
+	<div class="form-group">
+    <label for="chest_pain_type_atypical angina">The chest pain experienced (Value 0: typical angina, Value 1: atypical angina, Value 2: non-anginal pain, Value 3: asymptomatic)</label>
+    <select class="form-control" id="chest_pain_type_atypical angina" name="chest_pain_type_atypical angina">
+      <option>0</option>
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>	  
+    </select>
+    </div>
+
+    <div class="form-group">
+    <label for="fasting_blood_sugar_lower than 120mg/ml">The persons fasting blood sugar (> 120 mg/dl, 1 = true; 0 = false)</label>
+    <select class="form-control" id="fasting_blood_sugar_lower than 120mg/ml" placeholder="fasting blood sugar lower" name="fasting_blood_sugar_lower than 120mg/ml">
+	  <option>0</option>
+      <option>1</option>
+	</select>
+    </div>	
+	
+	<div class="form-group">
+    <label for="rest_ecg_left ventricular hypertrophy">Resting electrocardiographic measurement (0 = normal, 1 = having ST-T wave abnormality, 2 = showing probable or definite left ventricular hypertrophy by Estes criteria)</label>
+    <select class="form-control" id="rest_ecg_left ventricular hypertrophy" name="rest_ecg_left ventricular hypertrophy">
+      <option>0</option>
+      <option>1</option>
+      <option>2</option>
+    </select>
+    </div>
+	
+    <div class="form-group">
+    <label for="exercise_induced_angina_yes">Exercise induced angina (1 = yes; 0 = no)</label>
+    <select class="form-control" id="exercise_induced_angina_yes" name="exercise_induced_angina_yes">
+	  <option>0</option>
+      <option>1</option>
+    </select>
+    </div>	
+
+    <div class="form-group">
+    <label for="thalassemia_fixed defect">A blood disorder called thalassemia (0 = normal; 1 = fixed defect; 2 = reversable defect)</label>
+    <select class="form-control" id="thalassemia_fixed defect" name="thalassemia_fixed defect">
+	  <option>0</option>
+      <option>1</option>
+	  <option>2</option>
+    </select>
+    </div>	
+
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+
+</body>
+</html>
